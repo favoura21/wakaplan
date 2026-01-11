@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap 5, Icons, Animate.css, Google Fonts -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cities | WakaPlan</title>
+  <!-- Bootstrap 5, Icons, Animate.css, Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-  />
-    <link rel="stylesheet" href="style.css" />
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Uniform Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" style="border-radius: 0 0 1.5rem 1.5rem; box-shadow: 0 4px 24px rgba(44,62,80,0.10);">
+  <!-- Uniform Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3"
+    style="border-radius: 0 0 1.5rem 1.5rem; box-shadow: 0 4px 24px rgba(44,62,80,0.10);">
     <div class="container">
-      <a class="navbar-brand" href="#" onclick="goToHome()" style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.1rem; color: #2d3a8c; letter-spacing: -1px; text-shadow: 0 2px 8px rgba(76,201,240,0.07); text-decoration: none;">
-        <i class="bi bi-shop-window me-2"></i>
+      <a class="navbar-brand" href="#" onclick="goToHome()"
+        style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2.1rem; color: #2d3a8c; letter-spacing: -1px; text-decoration: none;">
+        <i class="bi bi-shop-window me-2 text-primary"></i>
         <span class="fw-bold">WakaPlan</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,18 +32,17 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
         <!-- Search Bar -->
         <div class="navbar-search d-none d-md-flex">
-          <input type="text" class="form-control" id="navbarSearchInput" placeholder="Search vendors, categories, locations..." />
+          <input type="text" class="form-control" id="navbarSearchInput" placeholder="Search vendors, cities..." />
           <button class="btn" id="navbarSearchBtn" title="Search">
             <i class="bi bi-search"></i>
           </button>
         </div>
-        
+
         <!-- Navigation Links -->
         <ul class="navbar-nav align-items-center gap-lg-2">
-          <!-- Mobile Search Bar -->
           <li class="nav-item d-md-none w-100 mb-3">
             <div class="navbar-search w-100">
-              <input type="text" class="form-control" id="navbarSearchInputMobile" placeholder="Search vendors, categories, locations..." />
+              <input type="text" class="form-control" id="navbarSearchInputMobile" placeholder="Search..." />
               <button class="btn" id="navbarSearchBtnMobile" title="Search">
                 <i class="bi bi-search"></i>
               </button>
@@ -61,27 +54,22 @@
             </a>
           </li>
           <li class="nav-item" id="vendorDashboardNavItem" style="display: none;">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="vendor-dashboard.html" id="navVendorDashboard">
+            <a class="nav-link fw-semibold px-3 rounded-pill" href="vendor-dashboard.html">
               <i class="bi bi-person me-1"></i>Vendor Dashboard
             </a>
           </li>
-          <li class="nav-item" id="eventPlannerDashboardNavItem" style="display: none;">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="event-planner-dashboard.html" id="navEventPlannerDashboard">
-              <i class="bi bi-calendar-event me-1"></i>Dashboard
-            </a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="help.html" id="navHelp">
+            <a class="nav-link fw-semibold px-3 rounded-pill" href="help.html">
               <i class="bi bi-question-circle me-1"></i>Help
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="messages.html" id="navMessages">
+            <a class="nav-link fw-semibold px-3 rounded-pill" href="messages.html">
               <i class="bi bi-chat-dots me-1"></i>Messages
             </a>
           </li>
           <li class="nav-item" id="loginNavItem">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="login.html" id="navLogin">
+            <a class="nav-link fw-semibold px-3 rounded-pill" href="login.html">
               <i class="bi bi-box-arrow-in-right me-1"></i>Login
             </a>
           </li>
@@ -95,214 +83,289 @@
     </div>
   </nav>
 
-<!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Vendor Cities</h1>
-                <p class="hero-subtitle">Discover vendors and services available across major cities in Nigeria. From Lagos to Abuja, find local experts for your events.</p>
+  <!-- Premium Hero Section -->
+  <section class="city-hero-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-lg-8 animate__animated animate__fadeInDown">
+          <span
+            class="d-inline-flex align-items-center bg-white text-primary px-3 py-2 rounded-pill mb-3 shadow-sm fw-bold">
+            <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Nationwide Coverage
+          </span>
+          <h1 class="city-hero-title">
+            Find Vendors in <span class="text-gradient-city">Your City</span>
+          </h1>
+          <p class="city-hero-subtitle mx-auto">
+            From the bustling streets of Lagos to the serene hills of Enugu, connect with top-rated event professionals
+            right in your neighborhood.
+          </p>
+          <div class="d-flex gap-3 justify-content-center mt-4">
+            <a href="#cities-grid" class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg">
+              Explore Locations
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="city-hero-bg-pattern"></div>
+  </section>
+
+  <!-- Cities Grid Section -->
+  <section class="city-content-section" id="cities-grid">
+    <div class="container">
+      <div class="text-center mb-5 animate__animated animate__fadeInUp">
+        <h2 class="section-title-premium">Popular Locations</h2>
+        <div class="title-underline-city mx-auto"></div>
+        <p class="text-muted mt-3" style="max-width: 600px; margin: 0 auto;">
+          Discover the best vendors in Nigeria's major cities.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Lagos -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+          <a href="index.html?location=Lagos" class="city-card-link">
+            <div class="city-card">
+              <div class="city-card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1618828665011-0c6c5369c0f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Lagos">
+                <div class="city-card-overlay"></div>
+                <div class="city-badge">
+                  <i class="bi bi-fire"></i> Hot
+                </div>
+              </div>
+              <div class="city-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="city-card-title">Lagos</h3>
+                  <div class="city-rating">
+                    <i class="bi bi-star-fill text-warning"></i> 4.8
+                  </div>
+                </div>
+                <p class="city-card-desc">The commercial heartbeat. Diverse vendors for every budget.</p>
+                <div class="city-tags">
+                  <span>Lekki</span>
+                  <span>Ikeja</span>
+                  <span>V.I.</span>
+                </div>
+                <div class="city-card-footer">
+                  <span class="text-primary fw-bold">300+ Vendors</span>
+                  <span class="city-arrow"><i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
             </div>
+          </a>
         </div>
-    </section>
 
-    <!-- Cities Section -->
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Explore Cities</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="city-card">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop" alt="Lagos" class="city-image">
-                        <h3 class="city-title">Lagos</h3>
-                        <p class="city-description">Nigeria's commercial hub with the most diverse range of vendors and services for all types of events.</p>
-                        <div class="city-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">300+</div>
-                                <div class="stat-label">Vendors</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">4.8★</div>
-                                <div class="stat-label">Rating</div>
-                            </div>
-                        </div>
-                        <ul class="city-features">
-                            <li>Victoria Island</li>
-                            <li>Lekki</li>
-                            <li>Ikeja</li>
-                            <li>Surulere</li>
-                        </ul>
-                        <button class="explore-btn" title="Explore Lagos vendors">Explore Lagos</button>
-                    </div>
+        <!-- Abuja -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+          <a href="index.html?location=Abuja" class="city-card-link">
+            <div class="city-card">
+              <div class="city-card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Abuja">
+                <div class="city-card-overlay"></div>
+              </div>
+              <div class="city-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="city-card-title">Abuja</h3>
+                  <div class="city-rating">
+                    <i class="bi bi-star-fill text-warning"></i> 4.7
+                  </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="city-card">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop" alt="Abuja" class="city-image">
-                        <h3 class="city-title">Abuja</h3>
-                        <p class="city-description">The capital city offering premium venues and high-end services for government and corporate events.</p>
-                        <div class="city-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">150+</div>
-                                <div class="stat-label">Vendors</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">4.7★</div>
-                                <div class="stat-label">Rating</div>
-                            </div>
-                        </div>
-                        <ul class="city-features">
-                            <li>Central Business District</li>
-                            <li>Wuse</li>
-                            <li>Gwarinpa</li>
-                            <li>Maitama</li>
-                        </ul>
-                        <button class="explore-btn" title="Explore Abuja vendors">Explore Abuja</button>
-                    </div>
+                <p class="city-card-desc">Premium services for high-end corporate and social events.</p>
+                <div class="city-tags">
+                  <span>Maitama</span>
+                  <span>Wuse</span>
+                  <span>Gwarinpa</span>
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="city-card">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop" alt="Port Harcourt" class="city-image">
-                        <h3 class="city-title">Port Harcourt</h3>
-                        <p class="city-description">Oil-rich city with growing event industry and diverse vendor options for all occasions.</p>
-                        <div class="city-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">80+</div>
-                                <div class="stat-label">Vendors</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">4.6★</div>
-                                <div class="stat-label">Rating</div>
-                            </div>
-                        </div>
-                        <ul class="city-features">
-                            <li>GRA</li>
-                            <li>Old GRA</li>
-                            <li>D-Line</li>
-                            <li>Mile 4</li>
-                        </ul>
-                        <button class="explore-btn" title="Explore Port Harcourt vendors">Explore Port Harcourt</button>
-                    </div>
+                <div class="city-card-footer">
+                  <span class="text-primary fw-bold">150+ Vendors</span>
+                  <span class="city-arrow"><i class="bi bi-arrow-right"></i></span>
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="city-card">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop" alt="Kano" class="city-image">
-                        <h3 class="city-title">Kano</h3>
-                        <p class="city-description">Historic city with rich cultural heritage and traditional event services and vendors.</p>
-                        <div class="city-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">60+</div>
-                                <div class="stat-label">Vendors</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">4.5★</div>
-                                <div class="stat-label">Rating</div>
-                            </div>
-                        </div>
-                        <ul class="city-features">
-                            <li>Nasarawa GRA</li>
-                            <li>Bompai</li>
-                            <li>Sharada</li>
-                            <li>Unguwa Uku</li>
-                        </ul>
-                        <button class="explore-btn" title="Explore Kano vendors">Explore Kano</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="city-card">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop" alt="Ibadan" class="city-image">
-                        <h3 class="city-title">Ibadan</h3>
-                        <p class="city-description">University city with vibrant culture and affordable event services for students and residents.</p>
-                        <div class="city-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">70+</div>
-                                <div class="stat-label">Vendors</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">4.6★</div>
-                                <div class="stat-label">Rating</div>
-                            </div>
-                        </div>
-                        <ul class="city-features">
-                            <li>Bodija</li>
-                            <li>Agbowo</li>
-                            <li>Mokola</li>
-                            <li>Challenge</li>
-                        </ul>
-                        <button class="explore-btn" title="Explore Ibadan vendors">Explore Ibadan</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="city-card">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop" alt="Enugu" class="city-image">
-                        <h3 class="city-title">Enugu</h3>
-                        <p class="city-description">Coal city with growing business community and expanding vendor network for events.</p>
-                        <div class="city-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">50+</div>
-                                <div class="stat-label">Vendors</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">4.5★</div>
-                                <div class="stat-label">Rating</div>
-                            </div>
-                        </div>
-                        <ul class="city-features">
-                            <li>New Haven</li>
-                            <li>Independence Layout</li>
-                            <li>GRA</li>
-                            <li>Thinkers Corner</li>
-                        </ul>
-                        <button class="explore-btn" title="Explore Enugu vendors">Explore Enugu</button>
-                    </div>
-                </div>
+              </div>
             </div>
+          </a>
         </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-card">
-                        <div class="stat-number-large">25+</div>
-                        <div class="stat-label-large">Cities</div>
-                    </div>
+        <!-- Port Harcourt -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+          <a href="index.html?location=Rivers" class="city-card-link">
+            <div class="city-card">
+              <div class="city-card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1623345805780-8f6c98163526?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Port Harcourt">
+                <div class="city-card-overlay"></div>
+              </div>
+              <div class="city-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="city-card-title">Port Harcourt</h3>
+                  <div class="city-rating">
+                    <i class="bi bi-star-fill text-warning"></i> 4.6
+                  </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-card">
-                        <div class="stat-number-large">700+</div>
-                        <div class="stat-label-large">Total Vendors</div>
-                    </div>
+                <p class="city-card-desc">Oil city elegance. Top-tier catering and entertainment.</p>
+                <div class="city-tags">
+                  <span>GRA</span>
+                  <span>D-Line</span>
+                  <span>Peter Odili</span>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-card">
-                        <div class="stat-number-large">50+</div>
-                        <div class="stat-label-large">Categories</div>
-                    </div>
+                <div class="city-card-footer">
+                  <span class="text-primary fw-bold">80+ Vendors</span>
+                  <span class="city-arrow"><i class="bi bi-arrow-right"></i></span>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stat-card">
-                        <div class="stat-number-large">4.7★</div>
-                        <div class="stat-label-large">Average Rating</div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </a>
         </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2 class="cta-title">Find Vendors in Your City</h2>
-            <p class="cta-subtitle">Connect with local vendors and service providers in your area for seamless event planning.</p>
-            <a href="index.html" class="btn cta-btn">Start Searching</a>
+        <!-- Kano -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+          <a href="index.html?location=Kano" class="city-card-link">
+            <div class="city-card">
+              <div class="city-card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1605218427368-35b0f0a3a694?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Kano">
+                <div class="city-card-overlay"></div>
+              </div>
+              <div class="city-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="city-card-title">Kano</h3>
+                  <div class="city-rating">
+                    <i class="bi bi-star-fill text-warning"></i> 4.5
+                  </div>
+                </div>
+                <p class="city-card-desc">Rich culture and tradition. Authentic northern experiences.</p>
+                <div class="city-tags">
+                  <span>Nasarawa</span>
+                  <span>Bompai</span>
+                </div>
+                <div class="city-card-footer">
+                  <span class="text-primary fw-bold">60+ Vendors</span>
+                  <span class="city-arrow"><i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-    </section>
+
+        <!-- Ibadan -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+          <a href="index.html?location=Oyo" class="city-card-link">
+            <div class="city-card">
+              <div class="city-card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1595842873728-666805cb17fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Ibadan">
+                <div class="city-card-overlay"></div>
+              </div>
+              <div class="city-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="city-card-title">Ibadan</h3>
+                  <div class="city-rating">
+                    <i class="bi bi-star-fill text-warning"></i> 4.6
+                  </div>
+                </div>
+                <p class="city-card-desc">Vibrant and affordable. Perfect for large traditional weddings.</p>
+                <div class="city-tags">
+                  <span>Bodija</span>
+                  <span>Mokola</span>
+                  <span>Ring Road</span>
+                </div>
+                <div class="city-card-footer">
+                  <span class="text-primary fw-bold">70+ Vendors</span>
+                  <span class="city-arrow"><i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Enugu -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+          <a href="index.html?location=Enugu" class="city-card-link">
+            <div class="city-card">
+              <div class="city-card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1620662758461-9f206a4d53a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Enugu">
+                <div class="city-card-overlay"></div>
+              </div>
+              <div class="city-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="city-card-title">Enugu</h3>
+                  <div class="city-rating">
+                    <i class="bi bi-star-fill text-warning"></i> 4.5
+                  </div>
+                </div>
+                <p class="city-card-desc">The Coal City. Scenic views and growing event spaces.</p>
+                <div class="city-tags">
+                  <span>Independence Layout</span>
+                  <span>New Haven</span>
+                </div>
+                <div class="city-card-footer">
+                  <span class="text-primary fw-bold">50+ Vendors</span>
+                  <span class="city-arrow"><i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Stats Section -->
+  <section class="city-stats-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="city-stats-container">
+            <div class="row text-center">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="city-stat-item">
+                  <h2 class="city-stat-number">36</h2>
+                  <p class="city-stat-label">States Covered</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="city-stat-item">
+                  <h2 class="city-stat-number">700+</h2>
+                  <p class="city-stat-label">Active Vendors</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="city-stat-item">
+                  <h2 class="city-stat-number">10k+</h2>
+                  <p class="city-stat-label">Events Planned</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="city-cta-section">
+    <div class="container">
+      <div class="city-cta-card">
+        <div class="text-center">
+          <h2 class="city-cta-title">Don't See Your City?</h2>
+          <p class="city-cta-text mx-auto">We are expanding rapidly! Check back soon or search for vendors willing to
+            travel.</p>
+          <a href="index.html" class="btn btn-light btn-lg rounded-pill px-5 fw-bold text-primary shadow-sm mt-3">
+            Search All Locations
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="container">
       <div class="row">
@@ -312,26 +375,18 @@
               <i class="bi bi-shop-window me-2"></i>WakaPlan
             </h5>
             <p class="footer-description">
-              Connecting event planners with top-quality vendors across Nigeria. 
+              Connecting event planners with top-quality vendors across Nigeria.
               Find the perfect professionals for your special occasions.
             </p>
             <div class="footer-social-links">
-              <a href="#" class="social-link" title="Facebook">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="#" class="social-link" title="Twitter">
-                <i class="bi bi-twitter"></i>
-              </a>
-              <a href="#" class="social-link" title="Instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href="#" class="social-link" title="LinkedIn">
-                <i class="bi bi-linkedin"></i>
-              </a>
+              <a href="#" class="social-link" title="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-link" title="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-2 col-md-6 mb-4">
           <h5 class="footer-section-title">Explore</h5>
           <ul class="footer-links">
@@ -342,7 +397,7 @@
             <li><a href="featured.html"><i class="bi bi-chevron-right me-1"></i>Featured</a></li>
           </ul>
         </div>
-        
+
         <div class="col-lg-2 col-md-6 mb-4">
           <h5 class="footer-section-title">Company</h5>
           <ul class="footer-links">
@@ -353,7 +408,7 @@
             <li><a href="contact.html"><i class="bi bi-chevron-right me-1"></i>Contact</a></li>
           </ul>
         </div>
-        
+
         <div class="col-lg-2 col-md-6 mb-4">
           <h5 class="footer-section-title">Support</h5>
           <ul class="footer-links">
@@ -364,7 +419,7 @@
             <li><a href="privacy.html"><i class="bi bi-chevron-right me-1"></i>Privacy Policy</a></li>
           </ul>
         </div>
-        
+
         <div class="col-lg-2 col-md-6 mb-4">
           <h5 class="footer-section-title">Newsletter</h5>
           <p class="footer-newsletter-text">Stay updated with vendor tips and special offers.</p>
@@ -378,9 +433,9 @@
           </div>
         </div>
       </div>
-      
+
       <hr class="footer-divider">
-      
+
       <div class="row footer-bottom">
         <div class="col-md-6">
           <p class="footer-copyright mb-0">
@@ -409,12 +464,11 @@
   <button class="fab-support" title="Contact Support" onclick="window.location.href='mailto:wakaplan1@gmail.com'">
     <i class="bi bi-headset"></i>
   </button>
-<script src="script.js"></script>
-  <!-- Bootstrap JS bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Supabase UMD build -->
+  <!-- Supabase & Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

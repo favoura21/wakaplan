@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap 5, Icons, Animate.css, Google Fonts -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals & Offers | WakaPlan</title>
+  <!-- Bootstrap 5, Icons, Animate.css, Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-  />
-    <link rel="stylesheet" href="style.css" />
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Uniform Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" style="border-radius: 0 0 1.5rem 1.5rem; box-shadow: 0 4px 24px rgba(44,62,80,0.10);">
+  <!-- Uniform Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3"
+    style="border-radius: 0 0 1.5rem 1.5rem; box-shadow: 0 4px 24px rgba(44,62,80,0.10);">
     <div class="container">
-      <a class="navbar-brand" href="#" onclick="goToHome()" style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.1rem; color: #2d3a8c; letter-spacing: -1px; text-shadow: 0 2px 8px rgba(76,201,240,0.07); text-decoration: none;">
-        <i class="bi bi-shop-window me-2"></i>
+      <a class="navbar-brand" href="#" onclick="goToHome()"
+        style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2.1rem; color: #2d3a8c; letter-spacing: -1px; text-decoration: none;">
+        <i class="bi bi-shop-window me-2 text-primary"></i>
         <span class="fw-bold">WakaPlan</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,18 +32,17 @@
       <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
         <!-- Search Bar -->
         <div class="navbar-search d-none d-md-flex">
-          <input type="text" class="form-control" id="navbarSearchInput" placeholder="Search vendors, categories, locations..." />
+          <input type="text" class="form-control" id="navbarSearchInput" placeholder="Search vendors, deals..." />
           <button class="btn" id="navbarSearchBtn" title="Search">
             <i class="bi bi-search"></i>
           </button>
         </div>
-        
+
         <!-- Navigation Links -->
         <ul class="navbar-nav align-items-center gap-lg-2">
-          <!-- Mobile Search Bar -->
           <li class="nav-item d-md-none w-100 mb-3">
             <div class="navbar-search w-100">
-              <input type="text" class="form-control" id="navbarSearchInputMobile" placeholder="Search vendors, categories, locations..." />
+              <input type="text" class="form-control" id="navbarSearchInputMobile" placeholder="Search..." />
               <button class="btn" id="navbarSearchBtnMobile" title="Search">
                 <i class="bi bi-search"></i>
               </button>
@@ -60,28 +53,18 @@
               <i class="bi bi-house-door me-1"></i>Home
             </a>
           </li>
-          <li class="nav-item" id="vendorDashboardNavItem" style="display: none;">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="vendor-dashboard.html" id="navVendorDashboard">
-              <i class="bi bi-person me-1"></i>Vendor Dashboard
-            </a>
-          </li>
-          <li class="nav-item" id="eventPlannerDashboardNavItem" style="display: none;">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="event-planner-dashboard.html" id="navEventPlannerDashboard">
-              <i class="bi bi-calendar-event me-1"></i>Dashboard
-            </a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="help.html" id="navHelp">
+            <a class="nav-link fw-semibold px-3 rounded-pill" href="help.html">
               <i class="bi bi-question-circle me-1"></i>Help
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="messages.html" id="navMessages">
+            <a class="nav-link fw-semibold px-3 rounded-pill" href="messages.html">
               <i class="bi bi-chat-dots me-1"></i>Messages
             </a>
           </li>
           <li class="nav-item" id="loginNavItem">
-            <a class="nav-link fw-semibold px-3 rounded-pill" href="login.html" id="navLogin">
+            <a class="nav-link fw-semibold px-3 rounded-pill" href="login.html">
               <i class="bi bi-box-arrow-in-right me-1"></i>Login
             </a>
           </li>
@@ -94,244 +77,271 @@
       </div>
     </div>
   </nav>
-<!-- HERO -->
-<section class="heroo" aria-labelledby="page-title">
-  <h1 id="page-title">WakaPlan Launch Deals</h1>
-  <p style="margin-top:0.5rem; font-size:1.1rem; max-width:700px; margin-inline:auto;">
-    Be part of the future of event planning in Nigeria!  
-    <br><strong>Vendors:</strong> Get free listings, badges & priority placements.  
-    <br><strong>Clients:</strong> Enjoy cashback, referral bonuses & exclusive discounts on your bookings.  
-  </p>
-</section>
 
-<div class="cta">
-  <a href="signup.html">Join Now – It’s Free 🎯</a>
-</div>
+  <!-- Premium Hero Section -->
+  <section class="deals-hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 animate__animated animate__fadeInLeft">
+          <span
+            class="d-inline-flex align-items-center bg-white text-danger px-3 py-2 rounded-pill mb-3 shadow-sm fw-bold">
+            <i class="bi bi-lightning-charge-fill me-1"></i> Limited Time Offers
+          </span>
+          <h1 class="deals-hero-title">
+            Unlock Exclusive <br><span class="text-gradient-deals">Launch Deals</span>
+          </h1>
+          <p class="deals-hero-subtitle">
+            Join the revolution! Whether you're a vendor or a client, we have incredible perks waiting for you. Don't
+            miss out on these early-bird specials.
+          </p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="signup.html" class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg">
+              Claim Your Deal
+            </a>
+            <a href="#all-deals" class="btn btn-outline-light btn-lg rounded-pill px-4">
+              View All Offers
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block animate__animated animate__fadeInRight">
+          <div class="deals-hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Deals and Offers" class="deals-hero-img">
+            <div class="floating-badge badge-1">
+              <i class="bi bi-gift-fill"></i> Free Listing
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="bi bi-cash-coin"></i> Cashback
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deals-hero-bg-pattern"></div>
+  </section>
 
-<!-- Highlight Section -->
-<h2 class="highlight-title">Highlight of Top Deals</h2>
-<section class="deal-grid">
-  <div class="deal-card featured">
-    <h3>Free 3 Months Listing</h3>
-    <p style="color: white;">Vendors enjoy full visibility on WakaPlan with zero subscription for the first 3 months.</p>
-  </div>
+  <!-- Top Deals Section -->
+  <section class="deals-content-section" id="all-deals">
+    <div class="container">
+      <div class="text-center mb-5 animate__animated animate__fadeInUp">
+        <h2 class="section-title-premium">Top Highlights</h2>
+        <div class="title-underline-deals mx-auto"></div>
+        <p class="text-muted mt-3">Our most popular offers ending soon.</p>
+      </div>
 
-<div class="deal-card featured">
-  <h3>2% Waka Cashback</h3>
-  <p style="color: white;">
-    Earn <strong>2% cashback</strong> as Waka Credits on every booking.  
-    Credits can <strong>only</strong> be used to book vendors on WakaPlan.  
-    <br><br>
-    <strong>Max cashback per booking: ₦5,000</strong>
-  </p>
-  <p style="color: white;">
-    <strong>Example:</strong> Book a DJ for ₦200,000 → Get ₦4,000 Waka Credits for your next booking.  
-    Book ₦500,000 → You still get ₦5,000 (capped).
-  </p>
-</div>
+      <div class="row g-4 justify-content-center">
+        <!-- Deal 1 -->
+        <div class="col-lg-5 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+          <div class="deal-card featured-deal">
+            <div class="deal-card-header">
+              <div class="deal-icon-wrapper">
+                <i class="bi bi-shop"></i>
+              </div>
+              <span class="badge bg-warning text-dark">For Vendors</span>
+            </div>
+            <h3 class="deal-title">Free 3 Months Listing</h3>
+            <p class="deal-desc">
+              Vendors enjoy full visibility on WakaPlan with <strong>zero subscription fees</strong> for the first 3
+              months. Get discovered by thousands of clients today.
+            </p>
+            <ul class="deal-features">
+              <li><i class="bi bi-check-circle-fill text-success"></i> Premium Profile</li>
+              <li><i class="bi bi-check-circle-fill text-success"></i> Unlimited Leads</li>
+              <li><i class="bi bi-check-circle-fill text-success"></i> Analytics Dashboard</li>
+            </ul>
+            <a href="signup.html" class="btn btn-light w-100 rounded-pill fw-bold text-primary mt-3">Get Started</a>
+          </div>
+        </div>
 
-</section>
+        <!-- Deal 2 -->
+        <div class="col-lg-5 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+          <div class="deal-card featured-deal">
+            <div class="deal-card-header">
+              <div class="deal-icon-wrapper">
+                <i class="bi bi-wallet2"></i>
+              </div>
+              <span class="badge bg-info text-dark">For Clients</span>
+            </div>
+            <h3 class="deal-title">2% Waka Cashback</h3>
+            <p class="deal-desc">
+              Earn <strong>2% cashback</strong> as Waka Credits on every booking. Use your credits to book more vendors
+              for your next event.
+            </p>
+            <ul class="deal-features">
+              <li><i class="bi bi-check-circle-fill text-success"></i> Instant Credit</li>
+              <li><i class="bi bi-check-circle-fill text-success"></i> No Expiry Date</li>
+              <li><i class="bi bi-check-circle-fill text-success"></i> Max ₦5,000 per booking</li>
+            </ul>
+            <a href="signup.html" class="btn btn-light w-100 rounded-pill fw-bold text-primary mt-3">Start Booking</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- All Deals -->
-<!--<section class="deal-grid">-->
-<!--  <div class="deal-card">-->
-<!--    <h3>Founding Vendor Badge</h3>-->
-<!--    <p>Stand out with a unique gold badge that shows clients you were among the first.</p>-->
-<!--  </div>-->
+  <!-- More Deals Grid -->
+  <section class="deals-grid-section bg-light">
+    <div class="container">
+      <h3 class="mb-4 fw-bold text-dark">More Exclusive Perks</h3>
+      <div class="row g-4">
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="deal-card-small h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="small-icon bg-purple-light text-purple">
+                <i class="bi bi-award"></i>
+              </div>
+              <h4 class="mb-0 fw-bold">Founding Badge</h4>
+            </div>
+            <p class="text-muted mb-0">First 500 vendors get a unique gold badge to show they were here first.</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="deal-card-small h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="small-icon bg-green-light text-green">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h4 class="mb-0 fw-bold">Priority Placement</h4>
+            </div>
+            <p class="text-muted mb-0">Appear at the top of search results in your category for the first 2 months.</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="deal-card-small h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="small-icon bg-blue-light text-blue">
+                <i class="bi bi-patch-check"></i>
+              </div>
+              <h4 class="mb-0 fw-bold">Free Verification</h4>
+            </div>
+            <p class="text-muted mb-0">Get your profile verified (ID & business check) at no cost for early signups.</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="deal-card-small h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="small-icon bg-orange-light text-orange">
+                <i class="bi bi-people"></i>
+              </div>
+              <h4 class="mb-0 fw-bold">Referral Bonus</h4>
+            </div>
+            <p class="text-muted mb-0">Invite vendors & earn ₦1,000 credit or 1 month extra free listing per referral.
+            </p>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="deal-card-small h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="small-icon bg-red-light text-red">
+                <i class="bi bi-ticket-perforated"></i>
+              </div>
+              <h4 class="mb-0 fw-bold">Raffle Giveaway</h4>
+            </div>
+            <p class="text-muted mb-0">Every booking in the first 100 enters a raffle to win a ₦20,000 gift card.</p>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="deal-card-small h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="small-icon bg-teal-light text-teal">
+                <i class="bi bi-percent"></i>
+              </div>
+              <h4 class="mb-0 fw-bold">First 10 Clients</h4>
+            </div>
+            <p class="text-muted mb-0">Be among the first 10 clients to book and enjoy 10% OFF (up to ₦50,000).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--  <div class="deal-card">-->
-<!--    <h3>Priority Placement</h3>-->
-<!--    <p>Vendors appear at the top of searches in their category for the first 2 months.</p>-->
-<!--  </div>-->
+  <!-- FAQ Section -->
+  <section class="faq-section-premium">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title-premium">Frequently Asked Questions</h2>
+        <p class="text-muted">Everything you need to know about our launch offers.</p>
+      </div>
 
-<!--  <div class="deal-card">-->
-<!--    <h3>Free Verification</h3>-->
-<!--    <p>Get your profile verified (ID & business check) at no cost for early signup.</p>-->
-<!--  </div>-->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion custom-accordion" id="faqAccordion">
+            <!-- Q1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne">
+                  What are Waka Credits?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Waka Credits are rewards you earn on WakaPlan through cashback, referrals, or promotions. They are
+                  stored in your account and can only be used to book vendors on WakaPlan. They cannot be withdrawn as
+                  cash.
+                </div>
+              </div>
+            </div>
+            <!-- Q2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  How does the 2% Cashback work?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You earn 2% cashback (in Waka Credits) on every successful booking, capped at ₦5,000 per vendor
+                  booking. If you book multiple vendors, cashback applies individually per booking.
+                </div>
+              </div>
+            </div>
+            <!-- Q3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">
+                  How long do these deals last?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Vendor launch perks (free listing, priority placement) are available to the first 500 vendors.
+                  Cashback & referral bonuses apply only during the launch promo period.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--  <div class="deal-card">-->
-<!--    <h3>Social Media Spotlight</h3>-->
-<!--    <p>Every week, top vendors & clients will be featured on WakaPlan’s social media for free.</p>-->
-<!--  </div>-->
+  <!-- CTA Section -->
+  <section class="deals-cta-section">
+    <div class="container">
+      <div class="deals-cta-card">
+        <div class="text-center">
+          <h2 class="deals-cta-title">Ready to Save Big?</h2>
+          <p class="deals-cta-text mx-auto">Don't wait! These offers are limited. Sign up now and start planning your
+            dream event.</p>
+          <a href="signup.html" class="btn btn-light btn-lg rounded-pill px-5 fw-bold text-primary shadow-sm mt-3">
+            Join Now – It’s Free 🎯
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--  <div class="deal-card">-->
-<!--    <h3>Referral Bonus</h3>-->
-<!--    <p>Invite vendors & earn ₦1,000 credit or 1 month extra free listing per referral.</p>-->
-<!--  </div>-->
-
-<!--  <div class="deal-card">-->
-<!--    <h3>Client Referral Bonus</h3>-->
-<!--    <p>Invite your friends to join WakaPlan! For every friend that registers & books, earn  -->
-<!--    <strong>₦3,000 WakaCredits</strong> for your next booking.</p>-->
-<!--  </div>-->
-
-<!--  <div class="deal-card">-->
-<!--    <h3>Raffle Giveaway</h3>-->
-<!--    <p>Every booking in the first 100 enters a raffle to win ₦20,000 gift card.</p>-->
-<!--  </div>-->
-
-<!--  <div class="deal-card">-->
-<!--    <h3>First 10 Clients Deal</h3>-->
-<!--    <p>Be among the <strong>first 10 clients</strong> to book on WakaPlan and enjoy  -->
-<!--    <strong>10% OFF</strong> (up to ₦50,000 max discount).</p>-->
-<!--  </div>-->
-
-<!--  <div class="deal-card">-->
-<!--   <h3>2% Cashback Promo</h3>-->
-<!--    <p>Book now & enjoy <strong>2% cashback</strong> on all event booking.</p>-->
-<!--  </div>-->
-<!--</section>-->
-
-<!-- Important Notice -->
-<div class="important-box">
-  <h3>⚡ Important</h3>
-  <p>
-    Vendor prices must <strong>match real market prices</strong>.  
-    If <strong>false or inflated pricing</strong> is detected, the listing will be declined.  
-    Clients can <strong>report inflated prices</strong> directly to WakaPlan.
-  </p>
-</div>
-
-<!--<section class="faq-section py-5" style="background:#f9fafb;">-->
-<!--  <div class="container">-->
-<!--    <h2 class="text-center mb-4 fw-bold" style="color:#2d3a8c;">WakaPlan Launch Deals – FAQ</h2>-->
-<!--    <div class="accordion" id="faqAccordion">-->
-
-      <!-- Q1 -->
-<!--      <div class="accordion-item">-->
-<!--        <h2 class="accordion-header" id="headingOne">-->
-<!--          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">-->
-<!--            1. What are Waka Credits?-->
-<!--          </button>-->
-<!--        </h2>-->
-<!--        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">-->
-<!--          <div class="accordion-body">-->
-<!--            Waka Credits are rewards you earn on WakaPlan through cashback, referrals, or promotions. <br><br>-->
-<!--            ✅ Stored in your WakaPlan account. <br>-->
-<!--            ✅ Can only be used to book vendors on WakaPlan. <br>-->
-<!--            ❌ Cannot be transferred or withdrawn as cash.-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-      <!-- Q2 -->
-<!--      <div class="accordion-item">-->
-<!--        <h2 class="accordion-header" id="headingTwo">-->
-<!--          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
-<!--            2. How does the 2% Waka Cashback work?-->
-<!--          </button>-->
-<!--        </h2>-->
-<!--        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">-->
-<!--          <div class="accordion-body">-->
-<!--            ✅ You earn <strong>2% cashback</strong> (in Waka Credits) on every successful booking. <br>-->
-<!--            ✅ Cashback is capped at <strong>₦5,000 per vendor booking</strong>. <br>-->
-<!--            ✅ If you book multiple vendors, cashback applies individually per booking. <br><br>-->
-<!--            <strong>Examples:</strong><br>-->
-<!--            • Book a DJ for ₦200,000 → ₦4,000 Waka Credits. <br>-->
-<!--            • Book a Caterer for ₦600,000 → ₦5,000 Waka Credits (capped).-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-      <!-- Q3 -->
-<!--      <div class="accordion-item">-->
-<!--        <h2 class="accordion-header" id="headingThree">-->
-<!--          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
-<!--            3. How do referrals work?-->
-<!--          </button>-->
-<!--        </h2>-->
-<!--        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">-->
-<!--          <div class="accordion-body">-->
-<!--            <strong>For Vendors:</strong> Invite another vendor → earn ₦1,000 WakaCredits or 1 extra free month listing. <br><br>-->
-<!--            <strong>For Clients:</strong> Invite a friend → when they book their first vendor, you earn ₦3,000 WakaCredits.-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-      <!-- Q4 -->
-<!--      <div class="accordion-item">-->
-<!--        <h2 class="accordion-header" id="headingFour">-->
-<!--          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">-->
-<!--            4. Can I use Waka Credits for anything else?-->
-<!--          </button>-->
-<!--        </h2>-->
-<!--        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">-->
-<!--          <div class="accordion-body">-->
-<!--            ❌ No. Waka Credits are only valid for vendor bookings inside WakaPlan. <br>-->
-<!--            ❌ They cannot be exchanged for cash or used outside the platform.-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-      <!-- Q5 -->
-<!--      <div class="accordion-item">-->
-<!--        <h2 class="accordion-header" id="headingFive">-->
-<!--          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">-->
-<!--            5. What if a client books all vendors in a category?-->
-<!--          </button>-->
-<!--        </h2>-->
-<!--        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">-->
-<!--          <div class="accordion-body">-->
-<!--            Cashback is calculated <strong>per vendor booking</strong>, capped at ₦5,000 each. <br><br>-->
-<!--            Example: If you book 5 vendors in one category, you get cashback for each vendor separately (up to ₦5,000 each).-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-      <!-- Q6 -->
-<!--      <div class="accordion-item">-->
-<!--        <h2 class="accordion-header" id="headingSix">-->
-<!--          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">-->
-<!--            6. What’s the “Best Price Guarantee”?-->
-<!--          </button>-->
-<!--        </h2>-->
-<!--        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">-->
-<!--          <div class="accordion-body">-->
-<!--            ✅ Vendors must list their <strong>real market prices</strong>. <br>-->
-<!--            ❌ If we detect inflated or fake pricing, the vendor’s listing will be declined. <br><br>-->
-<!--            Clients can also report inflated prices, and WakaPlan will review and take action.-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-      <!-- Q7 -->
-<!--      <div class="accordion-item">-->
-<!--        <h2 class="accordion-header" id="headingSeven">-->
-<!--          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">-->
-<!--            7. How do I get my Founding Vendor Badge?-->
-<!--          </button>-->
-<!--        </h2>-->
-<!--        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">-->
-<!--          <div class="accordion-body">-->
-<!--            🎖️ If you are among the first <strong>500 vendors</strong> to register, you automatically get the <strong>gold founding badge</strong> displayed beside your name.-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-      <!-- Q8 -->
-<!--      <div class="accordion-item">-->
-<!--        <h2 class="accordion-header" id="headingEight">-->
-<!--          <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">-->
-<!--            8. How long do these launch deals last?-->
-<!--          </button>-->
-<!--        </h2>-->
-<!--        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">-->
-<!--          <div class="accordion-body">-->
-<!--            Vendor launch perks (free listing, priority placement, etc.) are only available to the <strong>first 500 vendors</strong>. <br><br>-->
-<!--            Cashback & referral bonuses apply only during the <strong>launch promo period</strong>.-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-<div class="cta">
-  <a href="signup.html">Join Now – It’s Free 🎯</a>
-</div>
-
-   <footer>
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
@@ -340,26 +350,18 @@
               <i class="bi bi-shop-window me-2"></i>WakaPlan
             </h5>
             <p class="footer-description">
-              Connecting event planners with top-quality vendors across Nigeria. 
+              Connecting event planners with top-quality vendors across Nigeria.
               Find the perfect professionals for your special occasions.
             </p>
             <div class="footer-social-links">
-              <a href="#" class="social-link" title="Facebook">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="#" class="social-link" title="Twitter">
-                <i class="bi bi-twitter"></i>
-              </a>
-              <a href="#" class="social-link" title="Instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href="#" class="social-link" title="LinkedIn">
-                <i class="bi bi-linkedin"></i>
-              </a>
+              <a href="#" class="social-link" title="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-link" title="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-2 col-md-6 mb-4">
           <h5 class="footer-section-title">Explore</h5>
           <ul class="footer-links">
@@ -370,7 +372,7 @@
             <li><a href="featured.html"><i class="bi bi-chevron-right me-1"></i>Featured</a></li>
           </ul>
         </div>
-        
+
         <div class="col-lg-2 col-md-6 mb-4">
           <h5 class="footer-section-title">Company</h5>
           <ul class="footer-links">
@@ -381,7 +383,7 @@
             <li><a href="contact.html"><i class="bi bi-chevron-right me-1"></i>Contact</a></li>
           </ul>
         </div>
-        
+
         <div class="col-lg-2 col-md-6 mb-4">
           <h5 class="footer-section-title">Support</h5>
           <ul class="footer-links">
@@ -392,7 +394,7 @@
             <li><a href="privacy.html"><i class="bi bi-chevron-right me-1"></i>Privacy Policy</a></li>
           </ul>
         </div>
-        
+
         <div class="col-lg-2 col-md-6 mb-4">
           <h5 class="footer-section-title">Newsletter</h5>
           <p class="footer-newsletter-text">Stay updated with vendor tips and special offers.</p>
@@ -406,9 +408,9 @@
           </div>
         </div>
       </div>
-      
+
       <hr class="footer-divider">
-      
+
       <div class="row footer-bottom">
         <div class="col-md-6">
           <p class="footer-copyright mb-0">
@@ -427,16 +429,7 @@
       </div>
     </div>
   </footer>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".deal-card");
-    cards.forEach((card, i) => {
-      setTimeout(() => {
-        card.classList.add("show");
-      }, i * 200);
-    });
-  });
-</script>
+
   <div id="loadingSpinner">
     <div class="spinner-border" role="status">
       <span class="visually-hidden">Loading...</span>
@@ -446,11 +439,11 @@
   <button class="fab-support" title="Contact Support" onclick="window.location.href='mailto:wakaplan1@gmail.com'">
     <i class="bi bi-headset"></i>
   </button>
-<script src="script.js"></script>
-  <!-- Bootstrap JS bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Supabase UMD build -->
+  <!-- Supabase & Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
